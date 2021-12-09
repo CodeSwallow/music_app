@@ -1,2 +1,2 @@
-# music_app
+# Music App
 Music App using Flutter
