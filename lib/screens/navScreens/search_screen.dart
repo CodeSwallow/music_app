@@ -2,17 +2,17 @@ import 'package:flutter/material.dart';
 import 'package:music_app/widgets/app_drawer.dart';
 import 'package:music_app/widgets/custom_app_bar.dart';
 
-class PlayScreen extends StatelessWidget {
-  const PlayScreen({Key? key}) : super(key: key);
-  static const routeName = '/player_screen';
+class SearchScreen extends StatelessWidget {
+  const SearchScreen({Key? key}) : super(key: key);
+  static const routeName = '/search_screen';
 
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      appBar: CustomAppBar(title: 'Play'),
+      appBar: CustomAppBar(title: 'Search'),
       drawer: AppDrawer(),
       body: Center(
-        child: Text('Play Screen'),
+        child: Text('Search Screen'),
       ),
     );
   }

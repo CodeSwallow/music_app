@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:music_app/screens/navScreens/all_songs_screen.dart';
 import 'package:music_app/screens/play_screen.dart';
 
 class AppDrawer extends StatelessWidget {
@@ -51,20 +52,20 @@ class AppDrawer extends StatelessWidget {
               },
             ),
           ),
-          // SizedBox(
-          //   width: double.infinity,
-          //   child: TextButton.icon(
-          //     style: ButtonStyle(
-          //       alignment: Alignment.centerLeft,
-          //     ),
-          //     icon: Icon(Icons.star),
-          //     label: Text('Favorites'),
-          //     onPressed: () {
-          //       Navigator.of(context)
-          //           .pushReplacementNamed(SongListScreen.routeName);
-          //     },
-          //   ),
-          // ),
+          SizedBox(
+            width: double.infinity,
+            child: TextButton.icon(
+              style: const ButtonStyle(
+                alignment: Alignment.centerLeft,
+              ),
+              icon: const Icon(Icons.music_note_sharp),
+              label: const Text('All Songs'),
+              onPressed: () {
+                Navigator.of(context)
+                    .pushReplacementNamed(AllSongsScreen.routeName);
+              },
+            ),
+          ),
           // SizedBox(
           //   width: double.infinity,
           //   child: TextButton.icon(
